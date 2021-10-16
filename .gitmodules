@@ -1,0 +1,3 @@
+[submodule "rxjs"]
+	path = rxjs
+	url = ./rxjs
