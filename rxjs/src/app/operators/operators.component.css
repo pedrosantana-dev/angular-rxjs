@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.debounce-area {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin: auto;
+}

@@ -1,0 +1,29 @@
+.wrapped {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.wrapped div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.wrapped div:first {
+  width: 20%;
+}
+.wrapped div mat-radio-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+@media (max-width:420px) {
+  .wrapped {
+    flex-direction: column;
+  }
+  .wrapped div {
+    width: 100%;
+  }
+}

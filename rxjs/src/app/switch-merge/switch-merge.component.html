@@ -1,0 +1,20 @@
+<div>
+  <mat-form-field>
+    <mat-label>Procurar por:</mat-label>
+    <input #searchBy matInput placeholder="Digite algo" autocomplete="off" [(ngModel)]="searchInput">
+  </mat-form-field>
+</div>
+
+
+<mat-card>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let p of people$|async">
+        <h3 matLine>{{p.firstname}}, {{p.lastname}}</h3>
+        <p matLine>{{p.email}} </p>
+        <p matLine> {{p.city}}</p>
+        <p matLine> {{p.country}}</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,9 @@
+<div>
+  <div style="display: flex;flex-direction: row;align-items: center;">
+    <button mat-button color="warn" (click)="subscribe()">Subscription All</button>
+    <mat-spinner diameter="20" color="warn" *ngIf="subscriptionAreActive"></mat-spinner>
+  </div>
+  <div>
+    <button mat-button color="primary" [disabled]="!subscriptionAreActive" (click)="unsubscribe()">Unsubscribe All</button>
+  </div>
+</div>

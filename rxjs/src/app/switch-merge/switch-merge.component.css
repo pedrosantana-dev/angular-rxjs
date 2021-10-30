@@ -1,0 +1,17 @@
+
+div {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 1px #ccc;
+  border-radius: 6px;
+}
+mat-form-field {
+  width: 100%;
+}
+mat-card {
+  margin: 20px;
+}
+
